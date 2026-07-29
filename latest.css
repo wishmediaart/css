@@ -1,0 +1,38 @@
+.latest_section .cate_box { margin-bottom:3%; }
+.latest_section .col_s_02 > li h4 { font-size:21px; font-weight:600; line-height:1.4; }
+
+.latest_section .col_p_01 > li .bg { margin-bottom:6%; }
+.latest_section .col_p_01 > li h4 { font-size:21px; font-weight:600; line-height:1.4; }
+
+.latest_section .col_s_box01 .box { height:100%; }
+.latest_section .col_s_box01 .box > div { position:relative; height:100%; padding-bottom:calc(30px + 3%); }
+.latest_section .col_s_box01 .box .date { position:absolute; left:0; bottom:0; }
+.latest_section .col_s_box01 .box h4 { font-size:21px; }
+
+.latest_col2.col2 > li { width:47%; }
+.latest_col2.col2 .btn_more p { padding-right:7px; }
+.latest_col2.col2 .btn_more .btn_square { padding:0 8px; }
+
+.latest_section .latest_line { border-top:3px solid var(--mc); }
+.latest_section .latest_line li { border-bottom:1px solid #ddd; }
+.latest_section .latest_line li a { display:flex; justify-content:space-between; align-items:center; padding:calc(4px + 3.4%) 2%; }
+.latest_section .latest_line li .tit { width:76%; font-size:18px; font-weight:600; white-space: nowrap; overflow: hidden; }
+.latest_section .latest_line li a:hover .tit { color:var(--mc); }
+.latest_section .latest_line li .date { width:20%; text-align:right; }
+
+.latest_section .latest_box li { border-radius:10px; }
+.latest_section .latest_box li:nth-of-type(n+2) { margin-top:calc(4px + 0.3%); }
+.latest_section .latest_box li a { display:flex; justify-content:space-between; align-items:center; padding:calc(4px + 3.4%) calc(6px + 3%); }
+.latest_section .latest_box li .tit { width:74%; font-size:18px; font-weight:600; white-space: nowrap; overflow: hidden; }
+.latest_section .latest_box li a:hover .tit { color:var(--mc); }
+.latest_section .latest_box li .date { width:22%; text-align:right; }
+
+.edit .over_slide02 .slide_list.small.latest_list > li:nth-of-type(n+3) { display:none; }
+
+@media screen and (max-width:800px) {
+	.latest_col2.col2 > li { width:100%; }
+	.latest_col2.col2 > li:last-of-type { margin-top:calc(20px + 5%); }
+}
+@media screen and (max-width:540px) {
+	.latest_section .col_p_01 > li .bg { margin-bottom:5%; }
+}

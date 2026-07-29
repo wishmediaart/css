@@ -1,0 +1,37 @@
+
+/* 지도 (all) */
+
+.location_map > iframe { width:100% !important; border:1px solid #ddd; height:600px !important; overflow:hidden; }
+.location_map.small_map > iframe { height:400px !important; }
+
+.loca_info_i_01 { display:flex; flex-wrap:wrap; }
+.loca_info_i_01 li { width:100%; display:flex; align-items:center; padding:calc(8px + 0.4%) 0; }
+.loca_info_i_01.col2 li { width:48%; }
+.loca_info_i_01.line li { padding:calc(10px + 0.5%) 0; }
+.loca_info_i_01.line li:nth-of-type(n+2) { border-top:1px solid #ddd; }
+.loca_info_i_01 li .sicon { width:50px; font-size:18px; text-align:center; color:var(--mc); transform:translateY(-2%); padding-right:1%; }
+.loca_info_i_01 li .sicon.fa-location-dot { font-size:20px; }
+.loca_info_i_01 li h5 { width:110px; font-size:17px; line-height:1.3; font-weight:500; padding-right:1%; }
+.loca_info_i_01 li p { width:calc(100% - 170px); font-size:17px; line-height:1.4; color:#555; }
+.loca_info_i_01.col2 li.addr_100 { width:100%; }
+
+
+/* 지도 2단 (5:5) */
+.loca_list.col2 { row-gap:80px; }
+.loca_list.col2 > li { width:47%; }
+
+@media (max-width:1660px) {
+	.location_map > iframe { height:calc(240px + 20vw) !important; }
+	.location_map.small_map > iframe { height:calc(230px + 10vw) !important;; }
+	.loca_info_i_01 li .sicon { width:calc(32px + 1vw); }
+	.loca_info_i_01 li h5 { width:calc(60px + 2.5vw); }
+	.loca_info_i_01 li p { width:calc(100% - 92px - 3.5vw); }
+	.loca_list.col2 { row-gap:calc(30px + 3vw); }
+}
+@media screen and (min-width:768px) {
+	.loca_info_i_01.line.col2 li:nth-of-type(2) { border:0; }
+}
+@media screen and (max-width:767px) {
+	.loca_info_i_01.col2 li { width:100%; }
+	.loca_list.col2 > li { width:100%; }
+}

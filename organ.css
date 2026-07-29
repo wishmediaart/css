@@ -1,0 +1,160 @@
+/* 조직도 기본구조 */
+
+.organ {
+	--line_s : solid;
+	--line_c : rgba(0,0,0,.17);
+}
+#body .organ > .in_e.b_d {
+	--line_c : rgba(255,255,255,.3);
+}
+
+.organ.dash { --line_s : dashed; --line_c : #bbb; }
+.organ.line_mc { --line_c : var(--mc); }
+.organ.brd .box { border-radius:8px; }
+.organ.brd_100 .box { border-radius:1000px; }
+.organ .box p { padding:0 10%; text-align:center; line-height:1.4; }
+
+#body .organ .box.box_lc, #body .organ .box_lc .box { background-color:var(--lc); }
+#body .organ .box.box_mc, #body .organ .box_mc .box { background-color:var(--mc); }
+#body .organ .box.box_mc p, #body .organ .box_mc .box p { color:#fff; }
+.organ .box.box_bd, .organ .box_bd .box { border:1px solid var(--line_c); }
+#body .organ > .in_e.b_l .box.box_lc, #body .organ > .in_e.b_l .box_lc .box { background-color:#fff; }
+#body .organ > .in_e.b_d .box.box_lc, #body .organ > .in_e.b_d .box_lc .box { background-color:rgba(255, 255, 255, .2); backdrop-filter:blur(10px); }
+
+#body .organ .box.b_d_e p { color:#fff; }
+#body .organ .box.b_l_e p { color:#111; }
+
+.organ .organ_head, .organ .box, .organ .bot_area li .line, .organ .bot_area .cate { position:relative; }
+.organ .organ_head .head_vline { position:absolute; width:100%; height:100%; top:0; left:0; }
+.organ .organ_head .head_vline ul { display:flex; justify-content:center; height:100%; margin:0 -1.5%; }
+.organ .organ_head .head_vline ul li { position:relative; width:calc(100%/6); height:100%; }
+.organ .organ_head.cnt_7 .head_vline ul li { width:20%; }
+
+.organ .organ_head .head_vline ul li:before, .organ .bot_area li .line:before, .organ .bot_area .cate:before
+{ display:block; content:''; position:absolute; left:50%; top:0; width:0; height:100%; border-left:1px var(--line_s) var(--line_c); }
+
+.organ .top_area li { margin:0 auto; }
+
+.organ .mid_area { display:flex; flex-wrap:wrap; align-items:center; max-width:100%;  margin:0 auto; }
+.organ .mid_area li { width:50%; position:relative; }
+.organ .mid_area li:before { display:block; content:''; position:absolute; left:0; top:50%; width:100%; height:0; border-top:1px var(--line_s) var(--line_c); }
+.organ .mid_area li:nth-of-type(2n) .box { margin-left:auto; }
+
+.organ .bot_area { position:relative; display:flex; flex-wrap:wrap; justify-content:center; margin:0 -1.5%; row-gap:44px; }
+.organ .bot_area > li { position:relative; width:calc(100%/6); padding:0 1.5%; }
+.organ .bot_area.cnt_7 > li { width:20%; }
+.organ .bot_area > li:before { display:block; content:''; position:absolute; left:0; top:0; width:100%; border-top:1px var(--line_s) var(--line_c); }
+.organ .bot_area > li.left_box:before { left:50%; width:50%; }
+.organ .bot_area > li.right_box:before { width:50%; }
+.organ .bot_area > li.left_box.right_box:before { display:none; }
+
+#body .organ .bot_area .box.b_l_e p { color:#333; }
+
+
+@media (max-width: 1660px) {
+	.organ .bot_area { row-gap:calc(10px + 2vw); }
+}
+@media (max-width: 1200px) {
+	.organ .bot_area:not(.cnt_6) > li { width:20%; }
+	.organ .organ_head .head_vline ul li { width:20%; }
+	.organ .bot_area.cnt_6 > li { width:25%; }
+}
+@media (max-width: 900px) {
+	.organ .bot_area:not(.cnt_5) > li { width:25%; }
+	.organ .bot_area.cnt_5 > li { width:calc(100%/3); }
+}
+@media (max-width: 640px) {
+	.organ .bot_area:not(.cnt_4) > li { width:calc(100%/3); }
+	.organ .organ_head .head_vline ul li { width:calc(100%/3) !important; }
+	.organ .bot_area.cnt_4 > li { width:50%; }
+}
+@media (max-width: 480px) {
+	.organ .bot_area.cnt_2 > li, .organ .bot_area.cnt_8 > li, .organ .bot_area.cnt_10 > li { width:50%; }
+}
+
+
+
+/*** 조직도 스타일 basic ***/
+
+.organ .top_area.basic li { width:calc(80px + 8%); }
+.organ .top_area.basic li .box { padding:22px 0; background-color:var(--mc); }
+.organ .top_area.basic li .box p { color:#fff; font-size:17px; font-weight:500; }
+.organ .top_area.basic li:nth-of-type(n+2) { margin-top:calc(6px + 0.4%); }
+.organ .top_area.basic li:nth-of-type(n+2) .box { background-color:#444; }
+.organ .mid_area.basic, .organ .mid_area.basic + .vline_h,
+.organ .top_area.basic + .vline_h { padding-top:calc(16px + 2%); }
+
+.organ .mid_area.basic { width:calc(300px + 40%); }
+.organ .mid_area.basic li .box { width:calc(90px + 20%); padding:22px 0; background-color:#f5f5f5; }
+.organ .mid_area.basic li .box p { font-size:15.5px; font-weight:500; }
+.organ .mid_area.basic li:nth-of-type(n+3) { margin-top:calc(4px + 1%); }
+
+/* cate (부서) 박스 */
+.organ .bot_area.basic .cate { padding-top:40px; }
+.organ .bot_area.basic .cate .cate_area { height:80px; }
+.organ .bot_area.basic .cate .cate_area .box { height:100%; background-color:#fff; border:6px solid var(--mc); }
+.organ .bot_area.basic .cate .cate_area .box p { color:var(--mc); font-size:16px; font-weight:600; position:relative; top:50%; transform:translateY(-50%); }
+
+/* 팀 리스트 박스 */
+.organ .bot_area.basic > li > .line { padding-top:20%; }
+.organ .bot_area.basic > li > .cate + .line { padding-top:12%; }
+.organ .bot_area.basic .team .box.tit { padding:18px 0; background-color:var(--mc); }
+.organ .bot_area.basic .team .box.tit p { color:#fff; font-size:16px; font-weight:500; }
+.organ .bot_area.basic .team .box_list .line { padding-top:4%; }
+.organ .bot_area.basic .team .box_list .box { padding:16px 0; background-color:#f5f5f5; }
+.organ .bot_area.basic .team .box_list .box p { color:#333; font-size:15px; font-weight:400; }
+.organ .bot_area.basic .team_list .team:nth-of-type(n+2):before { display:block; content:''; padding-top:14%; width:1px; border-left:1px var(--line_s) var(--line_c); margin:0 auto; }
+
+#body .organ > .in_e.b_l .bot_area.basic .team .box_list .box { background-color:#fff; }
+#body .organ > .in_e.b_d .bot_area.basic .team .box_list .box { background-color:rgba(255, 255, 255, .2); backdrop-filter:blur(10px); }
+#body .organ > .in_e.b_d .bot_area.basic .team .box_list .box p { color:#fff; }
+
+@media (max-width: 1660px) {
+	.organ .bot_area.basic .cate .cate_area { height:calc(44px + 2vw); }
+	.organ .bot_area.basic .cate .cate_area .box { border-width:calc(3px + 0.2vw); }
+}
+@media (max-width: 640px) {
+	.organ .bot_area.cnt_4.basic > li > .line { padding-top:calc(10px + 3vw); }
+	.organ .bot_area.cnt_4.basic > li > .cate + .line { padding-top:calc(5px + 2vw); }
+}
+
+
+
+/*** 조직도 스타일 추가 ***/
+
+.organ .top_area.cir li { width:calc(70px + 5%); }
+.organ .top_area.cir li .box { aspect-ratio:1/1; background-color:var(--mc); border-radius:50%; }
+.organ .top_area.cir li .box p { color:#fff; font-size:17px; font-weight:500; position:relative; top:50%; transform:translateY(-50%); }
+.organ .top_area.cir li:nth-of-type(n+2) { margin-top:calc(6px + 0.4%); }
+.organ .top_area.cir li:nth-of-type(n+2) .box { width:90%; background-color:#444; margin:0 auto; }
+
+.organ .top_area.cir:not(.spread) + .mid_area.basic { padding-top:20px; }
+.organ .top_area.cir + .vline_h { padding-top:calc(16px + 2%); }
+.organ .top_area.cir.spread + .vline_h { padding-top:calc(22px + 2.8%); }
+
+.organ .top_area.cir.spread li:first-of-type .box { position:relative; }
+.organ .top_area.cir.spread li:first-of-type .box:before,
+.organ .top_area.cir.spread li:first-of-type .box:after
+{ display:block; content:''; position:absolute; width:100%; height:100%; left:0; top:0; background-color:var(--mc); z-index:-1; opacity:.16; transform:scale(112%); border-radius:50%; }
+.organ .top_area.cir.spread li:first-of-type .box:after { transform:scale(126%); opacity:.08; }
+.organ .top_area.cir.spread li:nth-of-type(2) { margin-top:calc(14px + 1%); }
+
+.organ .top_area.hexa_box li { width:calc(90px + 5%); }
+.organ .top_area.hexa_box li .box { position:relative; }
+.organ .top_area.hexa_box li .box .hexa { aspect-ratio:1/0.866; background-color:var(--mc); transform:rotate(30deg); }
+.organ .top_area.hexa_box li .box p { position:absolute; width:100%; color:#fff; font-size:17px; font-weight:500; top:50%; transform:translateY(-50%); }
+.organ .top_area.hexa_box li:nth-of-type(n+2) { margin-top:calc(15px + 1.4%); }
+.organ .top_area.hexa_box li:nth-of-type(n+2) .box { width:90%; margin:0 auto; }
+.organ .top_area.hexa_box li:nth-of-type(n+2) .box .hexa { background-color:#444; }
+.organ .top_area.hexa_box + .vline_h { padding-top:calc(22px + 2.8%); }
+
+.organ .bot_area .team.one_box > .box_list li .box { background-color:#fff; }
+.organ.brd .team.one_box .box, .organ.brd_100 .team.one_box .box { border-radius:0; }
+.organ.brd .team.one_box > .box.tit, .organ.brd_100 .team.one_box > .box.tit { border-top-left-radius:8px; border-top-right-radius:8px; }
+.organ.brd .team.one_box > .box_list li:last-of-type .box, .organ.brd_100 .team.one_box > .box_list li:last-of-type .box { border-bottom-left-radius:8px; border-bottom-right-radius:8px; }
+.organ .bot_area .team.one_box .box_list .box { border-left:1px solid var(--line_c); border-right:1px solid var(--line_c); border-bottom:1px var(--line_s) var(--line_c); }
+.organ .bot_area .team.one_box .box_list li:last-of-type .box { border-bottom:1px solid var(--line_c); }
+.organ .bot_area .team.one_box .box_list .line { display:none !important; }
+
+.organ > .in_e.b_d .bot_area .team.one_box .box_list .box { border-left:none; border-right:none; }
+.organ > .in_e.b_d .bot_area .team.one_box .box_list li:last-of-type .box { border-bottom:none; }
