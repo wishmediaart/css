@@ -575,7 +575,7 @@ section.div_line.arrow.no_line { padding:60px 0; }
 .in_e.b_d > .tbl_e tbody td, #body .tbl_e td.b_d { color:rgba(255, 255, 255, .8); }
 
 .scroll_table.left_fix { position:relative; }
-.scroll_table.left_fix .scroll { position:relative; z-index:1; }
+.scroll_table.left_fix .scroll { position:relative; z-index:1; background-color:#fff; }
 .scroll_table.left_fix .fix_table { display:none; position:absolute; z-index:0; left:0; top:0; }
 .scroll_table.left_fix .fix_table tr > * { border-left:0; border-right:0; }
 
