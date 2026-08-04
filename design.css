@@ -589,7 +589,7 @@ section.div_line.arrow.no_line { padding:60px 0; }
 	.scroll_table.big.left_fix { overflow-x:hidden; }
 	.scroll_table.big.left_fix .fix_table { display:block; }
 	.scroll_table.big.left_fix .fix_table tr > *:nth-child(n+2),
-	.scroll_table.big.left_fix .scroll tr th:first-child { visibility:hidden; }
+	.scroll_table.big.left_fix .scroll tr th:first-of-type { visibility:hidden; }
 	.scroll_table.big.left_fix .scroll { overflow-x:scroll; border-left:1px solid #ddd; }
 }
 @media screen and (max-width:767px) {
