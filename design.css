@@ -513,7 +513,7 @@ section.div_line.arrow.no_line { padding:60px 0; }
 
 
 
-.try_scroll { position:absolute; width:88px; height:88px; left:50%; margin-left:-44px;margin-top:-60px; border-radius:50%;font-size:10.5px; line-height:120%; color:#fff; background:#333 url('/images/viewside.png') center 14px no-repeat; background-size:20px; padding-top:48px; text-align:center; transition:all .3s; z-index:100; opacity:.9; display:none; }
+.try_scroll { position:absolute; width:88px; height:88px; left:50%; margin-left:-44px;margin-top:-60px; border-radius:50%;font-size:10.5px; line-height:120%; color:#fff; background:#333 url('viewside.png') center 14px no-repeat; background-size:20px; padding-top:48px; text-align:center; transition:all .3s; z-index:100; opacity:.9; display:none; }
 .try_scroll2 { position:absolute; right:0; margin-top:-26px; background:#222; font-size:11px; color:#fff; z-index:100; padding:5px 7px; opacity:0; transition:all .5s; }
 
 
@@ -831,7 +831,7 @@ section.div_line.arrow.no_line { padding:60px 0; }
 
 
 .frm_input, textarea { padding:15px 17px; font-size:15.5px; }
-select { padding:15px 40px 15px 20px; background:url('/images/select_arrow.gif') calc(100% - 17px) center no-repeat; line-height:120%; cursor:pointer; }
+select { padding:15px 40px 15px 20px; background:url('select_arrow.gif') calc(100% - 17px) center no-repeat; line-height:120%; cursor:pointer; }
 
 .col2_write { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; }
 .col2_write > * { width:48%; }
@@ -858,7 +858,7 @@ select { padding:15px 40px 15px 20px; background:url('/images/select_arrow.gif')
 
 @media (max-width:1660px) {
 	.frm_input, textarea { padding:12px 16px; }
-	select { padding:12px 35px 12px 16px; background:url('/images/select_arrow.gif') calc(100% - 8px - 0.4vw) center no-repeat; }
+	select { padding:12px 35px 12px 16px; background-position: calc(100% - 8px - 0.4vw); }
 	.write_div { margin-top:10px; }
 	.basic_sel { margin:18px 0 8px; }
 	.tit_write dt { width:calc(80px + 4vw); }
@@ -923,9 +923,9 @@ select { padding:15px 40px 15px 20px; background:url('/images/select_arrow.gif')
 }
 @media (min-width: 1250px){
 	.web .ov_view { position:relative; }
-	.web .ov_view:before { opacity:0; display:block; content:''; position:absolute; width:100%; height:100%; left:0; top:0; background-color:rgba(0,0,0,.5); background-position:center; background-repeat:no-repeat; background-image:url('/images/btn_zoom_view.png'); transition:opacity .3s; z-index:10; }
+	.web .ov_view:before { opacity:0; display:block; content:''; position:absolute; width:100%; height:100%; left:0; top:0; background-color:rgba(0,0,0,.5); background-position:center; background-repeat:no-repeat; background-image:url('btn_zoom_view.png'); transition:opacity .3s; z-index:10; }
 	.web .ov_view:hover:before { opacity:1; }
-	.web .ov_view[data-ytbid]:before { background-image:url('/images/yt_view.png'); }
+	.web .ov_view[data-ytbid]:before { background-image:url('yt_view.png'); }
 }
 
 /*** 유튜브 플레이 ***/
