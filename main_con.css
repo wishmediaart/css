@@ -31,6 +31,18 @@
 .col_p_01.main2 > li h4 { font-size:24px; }
 .col_p_01.main2 > li .btn_i { margin-top:4%; }
 
+.col_p_01.main3 > li { box-shadow:0 0 30px 0 rgba(0, 0, 0, .08); border-radius:20px; overflow:hidden; }
+.col_p_01.main3 > li .bg { aspect-ratio:1/0.73; }
+.col_p_01.main3 > li .txt { padding:30px 35px; }
+.col_p_01.main3 > li .txt > div { padding-right:calc(10% + 40px); position:relative; }
+.col_p_01.main3 > li h4 { font-size:25px; }
+.col_p_01.main3 > li .cont { font-size:15.5px; line-height:1.5; color:#777; }
+.col_p_01.main3 > li .txt .btn_square { position:absolute; right:0; bottom:3px; padding:0 7px; }
+
+.tit_cont .col_p_01.main3 > li .txt .btn_square { padding:0 8px; }
+#body.web .col_p_01.main3 > li a:hover .txt .btn_square { background-color:var(--mc); border-color:var(--mc); }
+.web .col_p_01.main3 > li a:hover .txt .btn_square span { color:#fff; }
+
 @media (max-width:1023px) {
 	#body .col_p_01.main2 { --colw:47%; --coln:2; justify-content:flex-start; }
 	.col_p_01.main2, .col_p_01.col_3.main2 { width:600px; }
