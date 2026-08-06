@@ -31,7 +31,7 @@
 .col_p_01.main2 > li h4 { font-size:24px; }
 .col_p_01.main2 > li .btn_i { margin-top:4%; }
 
-.col_p_01.main3 > li { box-shadow:0 0 30px 0 rgba(0, 0, 0, .08); border-radius:20px; overflow:hidden; }
+.col_p_01.main3 > li { background-color:#fff; box-shadow:0 0 30px 0 rgba(0, 0, 0, .08); border-radius:20px; overflow:hidden; }
 .col_p_01.main3 > li .bg { aspect-ratio:1/0.73; }
 .col_p_01.main3 > li .txt { padding:30px 35px; }
 .col_p_01.main3 > li .txt > div { padding-right:calc(10% + 40px); position:relative; }
