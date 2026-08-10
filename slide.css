@@ -12,6 +12,7 @@
 .col1_slide01 .slide_list .col2_cont > dd .btns_e { text-align:left; }
 .col1_slide01 .slide_list .col2_cont > dd .btns_e .btn_c { background-color:var(--mc); }
 
+
 .web .col1_slide01 .slide_list .slick-dots { margin-top:calc(15px + 2%); text-align:center; }
 .web .col1_slide01 .slide_list .slick-dots li { display: inline-block; margin:0 calc(2px + 0.2%); }
 .web .col1_slide01 .slide_list .slick-dots li button { font-size: 0; width:11px; aspect-ratio:1/1; border-radius:50%; background-color:#ddd; }
@@ -36,7 +37,7 @@
 .col3_slide01 .slide_list { --slide_gap : 20px; margin-left:calc(-1 * var(--slide_gap)); margin-right:calc(-1 * var(--slide_gap)); }
 .col3_slide01 .tit_cont dd .slide_list { --slide_gap : 12px; }
 .col3_slide01 .slide_list li.slick-slide { margin:0 var(--slide_gap); }
-
+.col3_slide01 .arrows:not(.att) .slide_out_next { margin-left:7px; }
 
 @media (max-width:1660px) {
 	.col3_slide01 .slide_list { --slide_gap : calc(3px + 1vw); }
@@ -316,5 +317,4 @@
 @media (max-width:1660px) {
 	.web .col5_slide01 .slide_list { --slide_gap : calc(4px + 0.4vw); }
 }
-
 
