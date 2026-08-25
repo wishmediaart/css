@@ -271,16 +271,16 @@
 
 /* 칼럼박스 아이콘 박스형 03 (all) */
 
-.col_i_box03 > li .box { padding:calc(23px + 1.5%) calc(27px + 1.5%)  calc(27px + 1.5%); height:100%; }
+.col_i_box03 > li .box { display:block; padding:calc(23px + 1.5%) calc(27px + 1.5%) calc(27px + 1.5%); height:100%; }
 .col_i_box03 > li .wrap { position:relative; height:100%; padding-bottom:100px; }
-.col_i_box03 > li .img_icon { position:absolute; right:0; bottom:0; }
+.col_i_box03 > li .icon { position:absolute; right:0; bottom:0; color:var(--mc); }
+.col_i_box03 > li .icon .sicon { font-size:32px; }
 .col_i_box03 > li .img_icon img { width:70px; }
 .col_i_box03 > li h4 { font-size:24px; }
 
 @media (max-width:1660px) {
 	.col_i_box03 > li .box { padding:calc(14px + 1.5% + 0.5vw) calc(18px + 1.5% + 0.5vw) calc(18px + 1.5% + 0.5vw); }
 	.col_i_box03 > li .wrap { padding-bottom:calc(66px + 2vw); }
-	.col_i_box03 > li .icon { height:calc(38px + 0.7vw); }
 	.col_i_box03 > li .img_icon img { width:calc(50px + 1.2vw); }
 }
 @media screen and (max-width:500px) {
@@ -524,8 +524,6 @@
 @media screen and (max-width:500px) {
 	#body .laurel_list { --colw:100%; width:240px; }
 }
-
-
 
 
 
