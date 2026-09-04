@@ -10,7 +10,7 @@
 
 .in_e.b_l > .table_03 .res_table tbody tr:nth-of-type(even) > * { background-color:#fff; }
 .in_e.b_d > .table_03 .res_table tbody tr:nth-of-type(even) > * { background-color:rgba(255, 255, 255, .05); }
-.in_e.b_d > .table_03 .res_table tbody tr:nth-of-type(odd) th { background-color:transparent; }
+.in_e.b_d > .table_03 .res_table tbody tr:nth-of-type(odd) td { background-color:transparent; }
 
 .table_02.table_03 .res_table tbody tr:nth-of-type(even) > *:first-child { border-radius:100px 0 0 100px; }
 .table_02.table_03 .res_table tbody tr:nth-of-type(even) > *:last-child { border-radius:0 100px 100px 0; }
