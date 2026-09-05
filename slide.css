@@ -142,7 +142,7 @@
 .over_slide03 .slide_list li.slick-slide { margin:0 var(--slide_gap); }
 
 .edit .over_slide03 { overflow:visible; }
-.edit .over_slide03 .slide_list { width:var(--swrap); margin-left:auto; margin-right:auto; }
+.edit #content .over_slide03 .slide_list { width:var(--swrap); margin-left:auto; margin-right:auto; }
 
 @media (max-width:1600px) {
    	.over_slide03 .slide_list { --slide_gap : calc(3px + 1vw); }
@@ -317,4 +317,3 @@
 @media (max-width:1660px) {
 	.web .col5_slide01 .slide_list { --slide_gap : calc(4px + 0.4vw); }
 }
-
