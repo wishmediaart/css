@@ -802,9 +802,9 @@ section.div_line.arrow.no_line { padding:60px 0; }
 #bo_v_top:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_top ul {padding:0;list-style:none;word-break:break-all}
 
-.bo_v_com {float:right}
+.bo_v_com {float:right; margin:4px 0;}
 .bo_v_com li {float:left;margin-left:5px}
-.bo_v_left {float:left}
+.bo_v_left {float:left; margin:4px 0;}
 .bo_v_left li {float:left;margin-right:5px}
 
 .bo_v_nb {margin-top:60px;position:relative;clear:both;text-align:left;border-bottom:1px solid #ddd}
