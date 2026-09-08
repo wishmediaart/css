@@ -753,10 +753,10 @@ section.div_line.arrow.no_line { padding:60px 0; }
 
 /* 게시판 목록 버튼 및 서치 */
 
-.btn_bo_user { float:right;margin:0;padding:0;list-style:none}
+.btn_bo_user { float:right;margin:4px 0;padding:0;list-style:none}
 .btn_bo_user li {float:left;margin-left:5px}
 
-.btn_bo_adm {float:left;}
+.btn_bo_adm { float:left; margin:4px 0; }
 .btn_bo_adm:after { clear:both; visibility:hidden; display:block; content:''; }
 .btn_bo_adm li {float:left;margin-right:6px;}
 .btn_bo_adm button, .btn_bo_user a { font-size:15px; }
