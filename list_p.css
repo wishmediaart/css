@@ -17,6 +17,17 @@
     .list_p_line01 > li .con { width:100%; margin-top:calc(10px + 2%); }
 }
 
+/* 구성원 소개 리스트 커스텀 */
+.person_list .list_p_line01 > li .con .stit { font-size:17px; line-height:1.4; }
+.person_list .list_p_line01 > li .con .tit { font-size:42px; font-weight:700; }
+.person_list .list_p_line01 > li .con .stit2 { font-size:24px; }
+.person_list .list_p_line01 > li:nth-of-type(n+2) { margin-top:calc(20px + 4%); padding-top:calc(20px + 4%); }
+
+@media (max-width:600px) {
+	.person_list .list_p_line01 > li:nth-of-type(n+2) { margin-top:calc(30px + 6%); padding-top:0; }
+}
+
+
 
 /* 리스트 포토 라인 02 (all) */
 
