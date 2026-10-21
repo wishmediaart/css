@@ -5,6 +5,9 @@
 .ytb_list_01.col_2 { --colw:48%; --coln:2; }
 .ytb_list_01.col_3 { --colw:31.2%; --coln:3; }
 .ytb_list_01.col_4 { --colw:23.4%; --coln:4; }
+.ytb_list_01.cnt_1, .ytb_list_01.cnt_2 { justify-content:center; }
+.tit_cont .ytb_list_01.cnt_1 { justify-content:start; }
+
 .ytb_list_01 > li { width:var(--colw); }
 .ytb_list_01 > li .bg { aspect-ratio:1/0.5625; }
 .ytb_list_01.brd > li .bg { border-radius:14px; }
